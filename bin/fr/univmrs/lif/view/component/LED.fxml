@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.ArcTo?>
+<?import javafx.scene.shape.ClosePath?>
+<?import javafx.scene.shape.HLineTo?>
+<?import javafx.scene.shape.LineTo?>
+<?import javafx.scene.shape.MoveTo?>
+<?import javafx.scene.shape.Path?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.VLineTo?>
+
+<AnchorPane fx:id="led" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Path fx:id="diode" fill="#c0c0c0" layoutX="3.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE">
+          <elements>
+              <MoveTo y="30.0" />
+            <LineTo y="10.0" />
+              <ArcTo radiusX="4.0" radiusY="4.0" sweepFlag="true" x="30.0" y="10.0" />
+            <LineTo x="30.0" y="30.0" />
+              <ClosePath />
+          </elements>
+      </Path>
+      <Rectangle fx:id="base" arcHeight="5.0" arcWidth="5.0" fill="#c0c0c0" height="10.0" layoutY="34.0" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+      <Path fx:id="cathode" fill="BLACK" opacity="0.33" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0">
+          <elements>
+              <MoveTo x="13.0" y="35.0" />
+              <LineTo x="13.0" y="20.0" />
+            <LineTo x="20.0" y="20.0" />
+            <LineTo x="20.0" y="23.0" />
+            <LineTo x="15.0" y="30.0" />
+            <LineTo x="15.0" y="35.0" />
+              <ClosePath />
+          </elements>
+      </Path>
+      <Path fx:id="anode" fill="BLACK" layoutX="-2.0" opacity="0.33" stroke="BLACK" strokeType="INSIDE">
+          <elements>
+              <MoveTo x="25.0" y="35.0" />
+            <VLineTo y="20.0" />
+            <HLineTo x="23.0" />
+            <VLineTo y="23.0" />
+            <LineTo x="18.0" y="30.0" />
+            <HLineTo x="21.0" />
+            <VLineTo y="35.0" />
+              <ClosePath />
+          </elements>
+      </Path>
+   </children>
+</AnchorPane>

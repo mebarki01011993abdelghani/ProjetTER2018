@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.ArcTo?>
+<?import javafx.scene.shape.ClosePath?>
+<?import javafx.scene.shape.HLineTo?>
+<?import javafx.scene.shape.MoveTo?>
+<?import javafx.scene.shape.Path?>
+
+<AnchorPane fx:id="draw" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Path cache="true" fill="#c5c5c5" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0">
+          <elements>
+              <MoveTo />
+            <LineTo x="17.5" />
+            <ArcTo radiusX="30.0" radiusY="20.0" sweepFlag="true" x="42.0" y="15.0" />
+            <ArcTo radiusX="30.0" radiusY="20.0" sweepFlag="true" x="17.5" y="30.0" />
+            <LineTo y="30.0" />
+            <ArcTo radiusX="3.0" radiusY="8.0" />
+            <ClosePath />
+          </elements>
+      </Path>
+      <Circle centerX="45.0" centerY="15.0" fill="#c5c5c5" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" />
+   </children>
+</AnchorPane>

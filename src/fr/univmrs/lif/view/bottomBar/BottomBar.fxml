@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TitledPane?>
+
+<TitledPane fx:id="bottomBar" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.univmrs.lif.controller.bottomBar.BottomBarController">
+   <content>
+      <TabPane tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="consoleTab" text="Console">
+          	<fx:include fx:id="console" source="console.fxml" />
+          </Tab>
+          <Tab fx:id="chronogramTab" text="Chronogram">
+          	<fx:include fx:id="chronogram" source="chronogram.fxml" />
+          </Tab>
+        </tabs>
+      </TabPane>
+   </content>
+</TitledPane>

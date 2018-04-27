@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+
+
+<Pane fx:id="sensor" prefHeight="60.0" prefWidth="60.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line endX="40.0" fill="RED" layoutX="-4.0" layoutY="44.0" rotate="-45.0" strokeWidth="3.0" />
+      <CubicCurve controlX1="20.0" controlY1="10.0" controlY2="-15.0" endX="25.0" fill="#c0c0c000" layoutX="38.0" layoutY="9.0" rotate="-45.0" stroke="BLACK" />
+      <Rectangle fx:id="handle" arcHeight="15.0" arcWidth="5.0" fill="SILVER" height="20.0" layoutX="31.0" layoutY="14.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="10.0" />
+   </children>
+</Pane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="appBarContainer" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.univmrs.lif.controller.appBar.AppBarController">
+   <children>
+      <fx:include fx:id="menuBar" source="MenuBar.fxml" />
+      <HBox fx:id="toolBarContainer" alignment="CENTER_LEFT">
+         <children>
+            <VBox alignment="CENTER" HBox.hgrow="ALWAYS">
+               <children>
+                  <ToolBar fx:id="toolBarEditor" nodeOrientation="LEFT_TO_RIGHT">
+                     <items>
+                        <Label text="Zoom :" />
+                        <Slider fx:id="toolBarZoomSlider" blockIncrement="1.0" majorTickUnit="10.0" max="1.0" min="0.5" minorTickCount="4" nodeOrientation="LEFT_TO_RIGHT" onMouseReleased="#handleToolBarZoomSlider" value="1.0" />
+                        <Separator orientation="VERTICAL" />
+                     </items>
+                  </ToolBar>
+                  <ToolBar fx:id="toolBarSimulator">
+                     <items>
+                        <Button fx:id="startSimulationButton" mnemonicParsing="false" onAction="#startSimulation" text="Start" />
+                        <Separator orientation="VERTICAL" />
+                        <Button fx:id="pauseSimulationButton" mnemonicParsing="false" onAction="#pauseSimulation" text="Pause" />
+                        <Button fx:id="stopSimulationButton" mnemonicParsing="false" onAction="#stopSimulation" text="Stop" />
+                        <Separator orientation="VERTICAL" />
+                     </items>
+                  </ToolBar>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

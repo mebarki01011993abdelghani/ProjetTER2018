@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+
+<MenuBar fx:id="menu" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.univmrs.lif.controller.appBar.MenuBarController">
+   <menus>
+      <Menu mnemonicParsing="false" text="File">
+         <items>
+            <MenuItem fx:id="menuBarFileNewProject" mnemonicParsing="false" onAction="#handleMenuBarFileNewProject" text="New project" />
+            <Menu mnemonicParsing="false" text="New from Template">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Basic" />
+               </items>
+            </Menu>
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem fx:id="menuBarFileOpen" mnemonicParsing="false" onAction="#handleMenuBarFileOpen" text="Open..." />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem fx:id="menuBarFileSave" disable="true" mnemonicParsing="false" onAction="#handleMenuBarFileSave" text="Save" />
+            <MenuItem fx:id="menuBarFileSaveAs" mnemonicParsing="false" onAction="#handleMenuBarFileSaveAs" text="Save as..." />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem fx:id="menuBarFileQuit" mnemonicParsing="false" onAction="#handleMenuBarFileQuit" text="Quit" />
+         </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Edit">
+         <items>
+            <MenuItem fx:id="menuBarEditUndo" disable="true" mnemonicParsing="false" onAction="#handleMenuBarEditUndo" text="Undo" />
+            <MenuItem fx:id="menuBarEditRedo" disable="true" mnemonicParsing="false" onAction="#handleMenuBarEditRedo" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem fx:id="menuBarEditDuplicate" disable="true" mnemonicParsing="false" onAction="#handleMenuBarEditDuplicate" text="Duplicate" />
+            <MenuItem fx:id="menuBarEditDelete" disable="true" mnemonicParsing="false" onAction="#handleMenuBarEditDelete" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem fx:id="menuBarEditSelectAll" disable="true" mnemonicParsing="false" onAction="#handleMenuBarEditSelectAll" text="Select All" />
+         </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Project">
+         <items>
+            <MenuItem fx:id="menuBarProjectRename" mnemonicParsing="false" onAction="#handleMenuBarProjectRename" text="Rename..." />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem fx:id="menuBarProjectProperties" mnemonicParsing="false" onAction="#handleMenuBarProjectProperties" text="Properties" />
+         </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Module">
+         <items>
+            <MenuItem fx:id="menuBarModuleNew" mnemonicParsing="false" onAction="#handleMenuBarModuleNew" text="New..." />
+            <MenuItem fx:id="menuBarModuleRename" mnemonicParsing="false" onAction="#handleMenuBarModuleRename" text="Rename current..." />
+            <MenuItem fx:id="menuBarModuleDelete" disable="true" mnemonicParsing="false" onAction="#handleMenuBarModuleDelete" text="Delete..." />
+            <MenuItem fx:id="menuBarModulePrint" mnemonicParsing="false" onAction="#handleMenuBarModulePrint" text="Print current..." />
+         </items>
+      </Menu>
+      <Menu mnemonicParsing="false" text="Help">
+         <items>
+            <MenuItem fx:id="menuBarHelpAbout" disable="true" mnemonicParsing="false" onAction="#handleMenuBarHelpAbout" text="About" />
+         </items>
+      </Menu>
+   </menus>
+</MenuBar>

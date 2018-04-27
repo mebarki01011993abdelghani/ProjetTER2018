@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane fx:id="switchView" prefHeight="40.0" prefWidth="40.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line endX="10.0" layoutX="40.0" layoutY="20.0" strokeWidth="3.0" />
+      <Circle fill="SILVER" layoutX="20.0" layoutY="20.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+      <Line endX="5.0" layoutX="10.0" layoutY="14.0" />
+      <Line endX="5.0" layoutX="20.0" layoutY="14.0" />
+      <Line endY="10.0" layoutX="10.0" layoutY="14.0" />
+      <Line endY="10.0" layoutX="15.0" layoutY="14.0" />
+      <Line endY="10.0" layoutX="20.0" layoutY="14.0" />
+      <Line endX="5.0" layoutX="15.0" layoutY="24.0" />
+      <Line endX="5.0" layoutX="25.0" layoutY="24.0" />
+      <Line endY="10.0" layoutX="30.0" layoutY="14.0" />
+      <Line endY="10.0" layoutX="25.0" layoutY="14.0" />
+      <Line endX="5.0" layoutX="30.0" layoutY="14.0" />
+      <Line endX="5.0" layoutX="5.0" layoutY="24.0" />
+   </children>
+</AnchorPane>

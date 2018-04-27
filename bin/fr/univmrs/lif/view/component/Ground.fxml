@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+
+
+<Pane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Line endX="23.0" layoutX="1.5" layoutY="1.5" strokeWidth="3.0" />
+      <Line endX="16.0" layoutX="5.5" layoutY="7.5" strokeWidth="3.0" />
+      <Line endX="8.0" layoutX="9.5" layoutY="13.5" strokeWidth="3.0" />
+   </children>
+</Pane>

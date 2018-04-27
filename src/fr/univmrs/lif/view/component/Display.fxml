@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.ClosePath?>
+<?import javafx.scene.shape.HLineTo?>
+<?import javafx.scene.shape.LineTo?>
+<?import javafx.scene.shape.MoveTo?>
+<?import javafx.scene.shape.Path?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.VLineTo?>
+
+<AnchorPane fx:id="display" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SILVER" height="80.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+      <Path fx:id="a" fill="#ff000026" layoutX="10.0" layoutY="8.0" stroke="#0000004e" strokeType="INSIDE">
+          <elements>
+              <MoveTo />
+            <LineTo absolute="false" x="5.0" y="-5.0" />
+            <HLineTo absolute="false" x="20.0" />
+            <LineTo absolute="false" x="5.0" y="5.0" />
+            <LineTo absolute="false" x="-5.0" y="5.0" />
+            <HLineTo absolute="false" x="-20.0" />
+              <ClosePath absolute="false" />
+          </elements>
+      </Path>
+      <Path fx:id="g" fill="#ff000026" layoutX="10.0" layoutY="40.0" stroke="#0000004e" strokeType="INSIDE">
+         <elements>
+            <MoveTo />
+            <LineTo absolute="false" x="5.0" y="-5.0" />
+            <HLineTo absolute="false" x="20.0" />
+            <LineTo absolute="false" x="5.0" y="5.0" />
+            <LineTo absolute="false" x="-5.0" y="5.0" />
+            <HLineTo absolute="false" x="-20.0" />
+            <ClosePath absolute="false" />
+         </elements>
+      </Path>
+      <Path fx:id="d" fill="#ff000026" layoutX="10.0" layoutY="72.0" stroke="#0000004e" strokeType="INSIDE">
+         <elements>
+            <MoveTo />
+            <LineTo absolute="false" x="5.0" y="-5.0" />
+            <HLineTo absolute="false" x="20.0" />
+            <LineTo absolute="false" x="5.0" y="5.0" />
+            <LineTo absolute="false" x="-5.0" y="5.0" />
+            <HLineTo absolute="false" x="-20.0" />
+            <ClosePath absolute="false" />
+         </elements>
+      </Path>
+      <Path fx:id="f" fill="#ff000026" layoutX="9.0" layoutY="9.0" stroke="#0000004e" strokeType="INSIDE">
+          <elements>
+              <MoveTo />
+            <LineTo absolute="false" x="5.0" y="5.0" />
+            <VLineTo absolute="false" y="20.0" />
+            <LineTo absolute="false" x="-5.0" y="5.0" />
+            <LineTo absolute="false" x="-5.0" y="-5.0" />
+            <VLineTo absolute="false" y="-20.0" />
+              <ClosePath absolute="false" />
+          </elements>
+      </Path>
+      <Path fx:id="b" fill="#ff000026" layoutX="41.0" layoutY="9.0" stroke="#0000004e" strokeType="INSIDE">
+         <elements>
+            <MoveTo />
+            <LineTo absolute="false" x="5.0" y="5.0" />
+            <VLineTo absolute="false" y="20.0" />
+            <LineTo absolute="false" x="-5.0" y="5.0" />
+            <LineTo absolute="false" x="-5.0" y="-5.0" />
+            <VLineTo absolute="false" y="-20.0" />
+            <ClosePath absolute="false" />
+         </elements>
+      </Path>
+      <Path fx:id="e" fill="#ff000026" layoutX="9.0" layoutY="41.0" stroke="#0000004e" strokeType="INSIDE">
+         <elements>
+            <MoveTo />
+            <LineTo absolute="false" x="5.0" y="5.0" />
+            <VLineTo absolute="false" y="20.0" />
+            <LineTo absolute="false" x="-5.0" y="5.0" />
+            <LineTo absolute="false" x="-5.0" y="-5.0" />
+            <VLineTo absolute="false" y="-20.0" />
+            <ClosePath absolute="false" />
+         </elements>
+      </Path>
+      <Path fx:id="c" fill="#ff000026" layoutX="41.0" layoutY="41.0" stroke="#0000004e" strokeType="INSIDE">
+         <elements>
+            <MoveTo />
+            <LineTo absolute="false" x="5.0" y="5.0" />
+            <VLineTo absolute="false" y="20.0" />
+            <LineTo absolute="false" x="-5.0" y="5.0" />
+            <LineTo absolute="false" x="-5.0" y="-5.0" />
+            <VLineTo absolute="false" y="-20.0" />
+            <ClosePath absolute="false" />
+         </elements>
+      </Path>
+   </children>
+</AnchorPane>

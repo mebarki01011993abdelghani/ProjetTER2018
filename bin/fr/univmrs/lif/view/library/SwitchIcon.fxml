@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="50.0" />
+      <ToggleButton contentDisplay="CENTER" disable="true" focusTraversable="false" graphicTextGap="0.0" layoutX="5.0" layoutY="5.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="40.0" text="Switch">
+         <font>
+            <Font name="System Bold" size="8.0" />
+         </font></ToggleButton>
+      <Line endX="60.0" endY="25.0" startX="50.0" startY="25.0" strokeWidth="3.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.ClosePath?>
+<?import javafx.scene.shape.LineTo?>
+<?import javafx.scene.shape.MoveTo?>
+<?import javafx.scene.shape.Path?>
+
+
+<Pane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Path fill="SILVER" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0">
+          <elements>
+              <MoveTo />
+            <LineTo absolute="false" x="30.0" y="15.0" />
+            <LineTo absolute="false" x="-30.0" y="15.0" />
+              <ClosePath />
+          </elements>
+      </Path>
+   </children>
+</Pane>

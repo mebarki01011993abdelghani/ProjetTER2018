@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.VBox?>
+
+<Accordion fx:id="library" prefWidth="200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.univmrs.lif.controller.library.LibraryController">
+	<panes>
+		<TitledPane alignment="TOP_LEFT" text="Gates">
+			<content>
+            <ScrollPane fitToHeight="true" fitToWidth="true">
+               <content>
+      				<VBox fx:id="libraryGate" alignment="TOP_CENTER" centerShape="false" />
+               </content>
+            </ScrollPane>
+			</content>
+		</TitledPane>
+      <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="I/O">
+         <content>
+            <ScrollPane fitToHeight="true" fitToWidth="true">
+               <content>
+                  <VBox fx:id="libraryIO" alignment="TOP_CENTER" />
+               </content>
+            </ScrollPane>
+         </content>
+      </TitledPane>
+      <TitledPane animated="false" layoutX="10.0" layoutY="72.0" text="MSI">
+         <content>
+            <ScrollPane fitToHeight="true" fitToWidth="true">
+               <content>
+                  <VBox fx:id="libraryMSI" alignment="TOP_CENTER" />
+               </content>
+            </ScrollPane>
+         </content>
+      </TitledPane>
+      <TitledPane animated="false" layoutX="10.0" layoutY="97.0" text="ALU">
+         <content>
+            <ScrollPane>
+               <content>
+                  <VBox fx:id="libraryALU" alignment="TOP_CENTER" />
+               </content>
+            </ScrollPane>
+         </content>
+      </TitledPane>
+      <TitledPane animated="false" layoutX="10.0" layoutY="122.0" text="Memory">
+         <content>
+            <ScrollPane>
+               <content>
+                  <VBox fx:id="libraryMemory" alignment="TOP_CENTER" />
+               </content>
+            </ScrollPane>
+         </content>
+      </TitledPane>
+	</panes>
+</Accordion>
