@@ -1,8 +1,19 @@
 package fr.univmrs.lif.view;
 
+//import javafx.scene.Group;
+//import javafx.scene.Node;
+//import javafx.scene.control.ScrollPane;
+//import javafx.scene.transform.Scale;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
+import javafx.geometry.Bounds;
 import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.control.TabPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.Region;
+import javafx.scene.layout.StackPane;
 import javafx.scene.transform.Scale;
 
 public class ZoomableScrollPane extends ScrollPane{
