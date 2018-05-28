@@ -18,6 +18,8 @@ public class Joint extends Component {
 		
 		addOutput(new Plug(this, PlugType.OUT));
 		addOutput(new Plug(this, PlugType.OUT));
+		//
+		removeOutput(new Plug(this, PlugType.OUT));
 	}
 	
 	@Override
